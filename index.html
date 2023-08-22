@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uniacomac</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
-
     <header id="header">
-        <img src="/assets/img/logo-leandro_02.png" alt="">
-        <nav>
-
-        </nav>
+        <div>
+            <img src="/src/img/logo_uniacomac.png" alt="">
+            <img src="/src/img/logo-leandro_02.png" alt="">
+        </div>
+        <button class="hamburger"></button>
         <nav class="nav">
             <ul class="nav-list">
                 <li><a href="">Apresentação</a></li>
@@ -27,6 +32,8 @@
         </nav>
     </header>
 
+
+
     <main>
 
         <section id="hero">
@@ -34,7 +41,8 @@
                 <svg class="circulo" width="150" height="150">
                     <circle cx="75" cy="75" r="70" fill="#006DE8"></circle>
                 </svg>
-                <svg  class="wave-upper" width="400" height="400" viewBox="0 0 188 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="wave-upper" width="400" height="400" viewBox="0 0 188 115" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M78.6661 46.1562C68.2661 38.5562 49.9994 37.3229 42.1661 37.6562H6.16977C1.94292 37.6562 -1.8958 38.4252 1.33138 35.6954C1.8644 35.2446 2.47327 34.7336 3.16609 34.1562C12.1661 26.6562 4.66609 33.1562 13.6661 25.6562C20.8661 19.6562 27.9994 15.8229 30.6661 14.6562C38.6661 10.1562 59.1661 0.956222 77.1661 0.156222C95.1661 -0.643778 107.333 1.82289 111.166 3.15622C129.666 7.15622 158.666 25.6562 171.166 42.6562C176.833 49.6562 188.066 66.8562 187.666 79.6562C187.266 92.4562 181.833 101.323 179.166 104.156C176.499 107.156 169.466 113.356 162.666 114.156C156.119 114.926 147.305 112.361 141.784 108.758C137.679 106.079 132.702 102.254 127.666 97.1562C115.73 85.0724 95.6661 61.1562 95.1661 60.6562C94.6661 60.1562 91.6661 55.6562 78.6661 46.1562Z"
                         fill="#FF7F00" />
@@ -61,113 +69,438 @@
                 </svg>
             </div>
         </section>
-        
+
 
         <section id="video">
+            <div class="r-img">
+                <img src="/src/img/shapes/vector-1.svg" alt="">
+            </div>
+            <div class="video">
+                <h1>Vídeo de Apresentação dos cursos da Uniacomac</h1>
+                <video class="video" src="/src/img/videos/Institucional_uniacomac.mp4" type="video/mp4" controls
+                    loop>Seu navegador não suporta este vídeo</video>
+            </div>
+            <div class="l-img">
+                <img src="/src/img/shapes/vector-2.svg" alt="">
+            </div>
+            <div class="mobile-img">
+                <img src="/src/img/shapes/vector-3.svg" alt="">
+            </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <section id="courses">
+            <!-- Sobre o Curso -->
+            <div class="container">
+                <div class="row">
+                    <aside class="courses-list">
+                        <h3>Sobre o Curso</h3>
+                        <p>O curso superior de tecnologia em gestão comercial para o varejo de materiais para
+                            construção,
+                            ofertado em dois anos e com um total de 1.600 horas fará com que o egresso seja capaz de*:
+                        </p>
+                        <ul>
+                            <li>Articular e decidir sobre as vendas em negócios diversos, incluindo àqueles atrelados ao
+                                varejo de materiais para construção</li>
+                            <li>Realizar estudos de viabilidade econômica, financeira e tributária</li>
+                            <li>Elaborar análises comerciais considerando as demandas e oportunidades do mercado</li>
+                            <li>Planejar pesquisas de mercado</li>
+                            <li>Desenvolver relacionamentos pós-venda com clientes</li>
+                            <li>Gerenciar sistemas de Informações comerciais</li>
+                            <li>Definir métodos de formação de preços, considerando aspectos tributários, de custos, da
+                                concorrência e do valor para o cliente</li>
+                            <li>Gerenciar a área comercial de uma organização</li>
+                            <li>Avaliar e emitir parecer técnico em sua área de formação</li>
+                        </ul>
+                    </aside>
+                    <aside>
+                        <img src="/src/img/team/img2.png" alt="">
+                    </aside>
+                </div>
+            </div>
+
+
+            <!-- Objetivo do Curso -->
+            <div class="container">
+                <div class="header">
+                    <header>
+                        <h1>Objetivo do Curso</h1>
+                    </header>
+                </div>
+                <main class="main-content">
+                    <ul>
+                        <li>Dar aos participantes um ferramental de conhecimento sobre gestão comercial, de forma a
+                            <br>compreenderem melhor seu papel no setor em questão, identificando oportunidades,
+                            propondo
+                            <br>soluções, e gerando valor para si e para as organizações.
+                        </li>
+                        <li>
+                            Cirar um ambiente de valorização e integração do conhecimento, onde os participantes possam
+                            <br>trazer suas próprias experiências e compartilhar aprendizados.
+                        </li>
+                        <li>Proporcionar formação acadêmica, que capacite os alunos a desenvolverem com sucesso, suas
+                            <br>carreiras no setor de varejo de materiais para construção, e a estarem preparados para
+                            <br>assumires novas posições nas organizações.
+                        </li>
+                    </ul>
+                </main>
+            </div>
+
+
+            <!-- Publico alvo -->
+            <div class="container">
+                <div class="row n-revert">
+                    <aside>
+                        <img src="/src/img/team/img3.png" alt="">
+                    </aside>
+                    <aside class="courses-list">
+                        <h3>Público Alvo</h3>
+                        <p>Profissionais que atuam ou desejam atuar em empresas de varejo, que possuam ou não, graduação
+                            nas diversas áreas do conhecimento, e que desejam uma formação e desenvolvimento em gestão
+                            varejo para o setor de materiais para construção.
+                        </p>
+                        <ul>
+                            <li>Vendedores</li>
+                            <li>Representates comerciais</li>
+                            <li>Estoquistas</li>
+                            <li>Gerentes de loja</li>
+                            <li>Empreendedores do setor</li>
+                            <li>Pessoas interessadas nas oportunidades promovidas
+                                <br>pelo setor de varejo de materiais para construção.
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+
+
+                <!-- Cursos Livres -->
+                <div class="container">
+                    <div class="header">
+                        <header>
+                            <h1>NOSSOS CURSOS</h1>
+                        </header>
+                        <main>
+                            <h1>CURSOS LIVRES</h1>
+                        </main>
+                    </div>
+                    <div class="row">
+                        <aside class="courses-list">
+                            <h3>Trilha Comercial</h3>
+                            <ul>
+                                <li>Estratégia de Vendas</li>
+                                <li>Atendimento ao cliente do Varejo</li>
+                                <li>Experiência do cliente do Varejo</li>
+                                <li>Simulador de jogos: Gestão do Varejo de Materiais para Construção</li>
+                            </ul>
+                            <h3>Trilha de Gestão de Estoque</h3>
+                            <ul>
+                                <li>Estratégia em Logística</li>
+                                <li>Gestão de Cadeia de Suprimentos no Setor de Construção</li>
+                                <li>Gestão de estoques</li>
+                                <li>Planejamento de Demanda – Gestão de Compras</li>
+                                <li>Simulador de jogos: Gestão do Varejo de Materiais para Construção</li>
+                            </ul>
+                            <h3>Trilha Financeira</h3>
+                            <ul>
+                                <li>Gestão de preços e margens de materiais de construção</li>
+                                <li>Gestão de Caixa</li>
+                                <li>Gestão financeira de estoques</li>
+                                <li>Simulador de jogos: Gestão do Varejo de Materiais para Construção</li>
+                            </ul>
+                            <h3>Trilha Gestão de Pessoas</h3>
+                            <ul>
+                                <li>Liderança e Gestão de Pessoas</li>
+                                <li>Simulador de jogos: Gestão do Varejo de Materiais para Construção</li>
+                            </ul>
+                        </aside>
+                        <aside>
+                            <img src="/src/img/team/img6.png" alt="">
+                        </aside>
+                    </div>
+                </div>
+
+
+                <!-- Graduação -->
+                <div class="container">
+                    <div class="header">
+                        <main>
+                            <h1>Graduação</h1>
+                        </main>
+                    </div>
+                    <div class="row n-revert">
+                        <aside>
+                            <img src="/src/img/team/img8.png" alt="">
+                        </aside>
+                        <aside class="courses-list">
+                            <h3>Trilha de Negócios</h3>
+                            <ul>
+                                <li>Tecnologia em Gestão da Qualidade EAD</li>
+                                <li>Tecnologia em Logística EAD</li>
+                                <li>Tecnologia em Eventos EAD</li>
+                                <li>Tecnologia em Secretariado EAD</li>
+                                <li>Tecnologia em Gestão Comercial EAD</li>
+                                <li>Tecnologia em Gestão de Recursos Humanos EAD</li>
+                                <li>Tecnologia em Gestão Financeira EAD</li>
+                                <li>Tecnologia em Gestão Hospitalar EAD</li>
+                                <li>Turismo EAD</li>
+                                <li>Administração EAD</li>
+                                <li>Ciências Contábeis EAD</li>
+                                <li>Tecnologia em Comércio Exterior EAD</li>
+                                <li>Tecnologia em Gestão Pública EAD</li>
+                                <li>Tecnologia em Marketing EAD</li>
+                                <li>Tecnologia em Processos Gerenciais EAD</li>
+                            </ul>
+                            <h3>Trilha de Tecnologia</h3>
+                            <ul>
+                                <li>Sistemas de Informação EAD</li>
+                                <li>Tecnologia em Análise e Desenvolvimento de Sistemas EAD</li>
+                                <li>Tecnologia em Banco de Dados EAD</li>
+                                <li>Tecnologia em Ciência de Dados EAD</li>
+                                <li>Tecnologia em Gestão da Tecnologia da Informação EAD</li>
+                                <li>Tecnologia em Jogos Digitais EAD</li>
+                                <li>Tecnologia em Redes de Computadores EAD</li>
+                                <li>Tecnologia em Segurança da Informação EAD</li>
+                                <li>Tecnologia em Sistemas para Internet EAD</li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+
+
+                <!-- Pós-graduação -->
+                <div class="container">
+                    <div class="header">
+                        <main>
+                            <h1>Pós-Graduação</h1>
+                        </main>
+                    </div>
+                    <div class="row">
+                        <aside class="courses-list">
+                            <h3>Trilha de Negócios</h3>
+                            <ul>
+                                <li>MBA em Qualidade e Produtividade</li>
+                                <li>Especialização em Administração de Empresas</li>
+                                <li>MBA em Gestão de Negócios</li>
+                                <li>MBA em Gestão de Pessoas</li>
+                                <li>MBA em Controladoria Estratégica</li>
+                                <li>MBA em Finanças Estratégicas e Investimentos</li>
+                                <li>MBA em Gestão de Projetos</li>
+                                <li>MBA em Marketing e Transformação Digital</li>
+                                <li>MBA em Mercado de Capitais</li>
+                                <li>MBA em Negociação e Vendas</li>
+                                <li>MBA em Administração Estratégica e Inteligência de Mercado</li>
+                                <li>MBA em e-Commerce e Negócios Digitais</li>
+                                <li>MBA em Planejamento Tributário</li>
+                                <li>Governança Corporativa, Gestão de Riscos e Compliance</li>
+                                <li>Gestão da Qualidade e Ambiental</li>
+                                <li>MBA em Controladoria e Gestão Tributária</li>
+                                <li>MBA em Finanças Orçamentais, Banking e Mercado de Ações</li>
+                                <li>MBA em Manufatura, Logística e Operações Internacionais</li>
+                                <li>MBA em Marketing Digital e Inteligência de Mercado</li>
+                            </ul>
+                            <h3>Trilha de Tecnologia</h3>
+                            <ul>
+                                <li>Governança em Tecnologia da Informação</li>
+                                <li>Inteligência Artificial e Aprendizagem de Máquina</li>
+                                <li>Data Science e Analytics</li>
+                                <li>Governança Digital em TI</li>
+                            </ul>
+                            <h3>Trilha de Engenharia</h3>
+                            <ul>
+                                <li>Engenharia da Qualidade Integrada</li>
+                                <li>Engenharia de Operações Industriais</li>
+                                <li>Gerenciamento de Obras na Construção Civil 4.0</li>
+                                <li>Gerência de Energia e Eficiência Energética</li>
+                                <li>Indústria 4.0 - Robótica e Automação Industrial</li>
+                                <li>Engenharia Geotécnica</li>
+                                <li>Engenharia de Segurança do Trabalho</li>
+                                <li>Engenharia de Estruturas</li>
+                                <li>Engenharia de Avaliações e Perícias</li>
+                            </ul>
+                        </aside>
+                        <aside>
+                            <img src="/src/img/team/img7.png" alt="">
+                        </aside>
+                    </div>
+
+                </div>
+
+
+                <!-- Módulos Internacionais -->
+                <div class="container">
+                    <div class="header">
+                        <main>
+                            <h1>Módulos Internacionais</h1>
+                        </main>
+                    </div>
+                    <div class="row n-revert">
+                        <aside>
+                            <img src="/src/img/team/img7.png" alt="">
+                        </aside>
+                        <aside class="courses-list">
+                            <h3>Internacionais</h3>
+                            <p>
+                                Para dar resposta às reais necessidades do mercado, os programas de formação para
+                                <br>executivos estruturados pela LMSE em parceria com a Porto Business School e o ISEG,
+                                o
+                                <br>Instituto Superior de Economia e Gestão, duas das maiores escola de negócios de
+                                Portugal
+                                <br>e a EADA uma das escolas mais reconhecidas na Espanha são disponibilizados
+                                promovendo
+                                <br>uma aprendizagem contínua.
+                            </p>
+                            <p>
+                                Este tipo de programa permite aos executivos investirem no seu desenvolvimento pessoal e
+                                <br>profissional.
+                            </p>
+                            <p>
+                                A formação de executivos destina-se a qualificar profissionais através de um curso,
+                                <br>alinhado com os seus objetivos e desafios, que acompanha o ritmo da evolução social,
+                                <br>econômica e empresarial.
+                            </p>
+                            <p>
+                                Os profissionais terão acesso a ferramentas metodológicas e práticas para gerar valor e
+                                <br>performance para as suas
+                                <br>organizações em temas como:
+                            </p>
+                            <ul>
+                                <li>Estratégia e inovação</li>
+                                <li>Administração geral e economia</li>
+                                <li>Marketing e gestão comercial</li>
+                                <li>Liderança</li>
+                                <li>Tecnologia Digital</li>
+                                <li>Finanças</li>
+                                <li>Sustentabilidade</li>
+                            </ul>
+                        </aside>
+                    </div>
+
+                </div>
 
         </section>
 
-        <section id="section">
-            <aside id="about"></aside>
-            <aside id="public"></aside>
+        <section id="students">
+            <h1>Entregáveis ao Aluno</h1>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/src/img/icons/carrinho-de-mao.png" alt="">
+                        <p> Apresentação em detalhes do setor de varejo de materiais para construção com todos os seus
+                            mecanismos e dinâmicas de funcionamento</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/src/img/icons/tecnologia.png" alt="">
+                        <p>Foco na gestão de Informações, tecnologia e inovação</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/src/img/icons/professor.png" alt="">
+                        <p>Curso ministrado por profissionais atuantes no setor e com sólida formação acadêmica</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/src/img/icons/customizar.png" alt="">
+                        <p>Flexibilidade e customização de conteúdos (voltados para o setor de varejo de construção
+                            civil), horários e formas de aprendizagem</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/src/img/icons/treinamento.png" alt="">
+                        <p>Direcionamento de conteúdos</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/src/img/icons/aluna.png" alt="">
+                        <p>Acompanhamento e evolução dos alunos</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/src/img/icons/teste.png" style="width: 4rem;" alt="">
+                        <p>Desenvolvimento de líderes</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/src/img/icons/lideranca.png" alt="">
+                        <p>Capacitação dos colaboradores associados</p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                </div>
+            </div>
         </section>
 
-        <section id="goal"></section>
-
-        <section id="deliver">
-            <aside></aside>
-            <aside></aside>
+        <section id="teachers">
+            <div class="row">
+                <aside>
+                    <header>
+                        <h1>Nossos Professores</h1>
+                    </header>
+                    <h3>Perfil dos Professores</h3>
+                    <p>O corpo docente é composto por executivos com excelente formação acadêmica nas mais diversas
+                        áreas de aplicação da gestão pública de negócios, dedicados à treinamento, gestão, consultoria,
+                        ensino e pesquisa, para atualização e alavancagem de novos conhecimentos para os alunos da
+                        UniAcomac.</p>
+                </aside>
+                <aside>
+                    <img src="/src/img/team/img4.png" alt="">
+                </aside>
+            </div>
         </section>
-
-        <section id="accelerated"></section>
-
-        <section id="schedule"></section>
-
-        <section id="teachers"></section>
-
-        <section id="exam"></section>
-
-        <section id="investment"></section>
-
-        <section id="investment"></section>
-
-        <section id="section">
-            <aside id="undergraduation"></aside>
-            <aside id="img"></aside>
-        </section>
-
-        <section id="section">
-            <aside id="img"></aside>
-            <aside id="especialization"></aside>
-        </section>
-
-        <section id="section">
-            <aside id="mba"></aside>
-            <aside id="img"></aside>
-        </section>
-
-        <section id="contact"></section>
-
-        <section id="about-us"></section>
-
     </main>
 
-
-    <footer></footer>
 
 
     <div id="preloader"></div>
 
+    <script src="/src/js/main.js"></script>
 
-    <script src="/assets/js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 40,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            },
+            on: {
+                autoplayTimeLeft(s, time, progress) {
+                    progressCircle.style.setProperty("--progress", 1 - progress);
+                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>
