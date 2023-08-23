@@ -49,9 +49,7 @@ body {
     transform: rotate(360deg);
   }
 }
-
 /* End Preloader */
-
 
 /* Header */
 #header {
@@ -114,7 +112,7 @@ body {
 /* End Header */
 
 /* Hero and Exam */
-#hero, 
+#hero,
 #exam {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -143,6 +141,10 @@ body {
   padding: 4rem;
 }
 
+#exam .hero-img-fluid {
+  display: none;
+}
+
 #exam .hero-img {
   padding: 6.6rem;
   width: 40vw;
@@ -163,17 +165,17 @@ body {
 #exam button {
   border: none;
   border-radius: 2rem;
-  
+
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
-  
+
   background: white;
   color: var(--text-hot-primary);
-  
+
   padding: 1rem 2.5rem;
   margin-top: 1rem;
-  
+
   position: relative;
   z-index: 2;
 
@@ -218,15 +220,39 @@ body {
     align-items: normal;
   }
 
+  #exam .hero-img {
+    display: none;
+  }
+
+  #exam .hero-img-fluid {
+    display: flex;
+    flex-direction: column;
+    background: var(--text-cold-secondary);
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+
+  #exam .hero-img div {
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
+    background-color: var(--text-cold-secondary);
+    margin-inline: 1rem;
+  }
+
   #hero .hero-img {
     margin: 1rem;
   }
 
-  #hero h1 {
+  #hero h1,
+  #exam h1 {
     font-size: 1.7rem;
   }
 
-  #hero p {
+  #hero p,
+  #exam p {
     font-size: 0.85rem;
   }
 
@@ -498,14 +524,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: .5rem;
-  
+
   background: var(--text-hot-primary);
-  
+
   text-align: center;
   font-size: 18px;
   color: white;
   font-weight: 300;
-  
+
   padding: 3rem;
 }
 
@@ -548,6 +574,7 @@ body {
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+
 /* End Swiper */
 
 /* End Students */
@@ -568,7 +595,7 @@ body {
     margin-inline: .2rem;
   }
 
-  #teachers .row>aside header  {
+  #teachers .row>aside header {
     margin-inline: 1rem;
   }
 
@@ -596,7 +623,7 @@ body {
 
   color: white;
   background: var(--text-hot-primary);
-  
+
   border-radius: 0 .5rem .5rem 0;
   padding: 1rem 2rem;
   width: 50%;
@@ -607,6 +634,7 @@ body {
   margin-inline: 2rem;
   color: var(--text-cold-secondary);
 }
+
 /* End  Teachers */
 
 /* Schedule */
@@ -703,20 +731,11 @@ body {
   gap: 4rem;
 }
 
-@media (max-width: 768px) {
-  #contact .social-media {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 #contact .social-media a {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
 
-#contact .social-media a div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -725,20 +744,20 @@ body {
   border: 2px solid #e1e1e1;
   border-radius: 1rem;
   background: white;
-  
+
   width: 15vw;
   height: 15vw;
-  
+
   transition: 1s;
 }
 
-#contact .social-media a div:hover {
+#contact .social-media a:hover {
   transform: translateY(-10%);
   color: var(--text-cold-primary);
 }
 
-#contact .social-media a div h3,
-#contact .social-media a div p {
+#contact .social-media a h3,
+#contact .social-media a p {
   opacity: .7;
 }
 
@@ -746,4 +765,164 @@ body {
   color: var(--text-cold-primary);
   font-size: 2.5rem;
 }
+
+@media (max-width: 768px) {
+  #contact .social-media {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact .social-media a {
+    min-width: fit-content;
+    height: fit-content;
+    width: 50vw;
+    padding-block: 2rem;
+  }
+}
+
 /* End Contact */
+
+/* About Us */
+#about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  align-items: center;
+
+  background: var(--text-hot-primary);
+
+  padding: 4rem;
+}
+
+#about-us img {
+  width: 100%;
+}
+
+#about-us .about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  text-align: end;
+
+  color: white;
+}
+
+#about-us .about-text h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+#about-us .about-text ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#about-us .about-text ul li {
+  width: max-content;
+  text-align: end;
+}
+
+@media (max-width: 768px) {
+  #about-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-us .about-text ul {
+    align-items: flex-start;
+  } 
+  
+  #about-us .about-text ul li {
+    text-align: start;
+  }
+
+  #about-us .about-text p {
+    text-align: start;
+  }
+}
+
+/* End About Us */
+
+/* Footer */
+#footer {
+  background: #1c1c1c;
+  padding: 2rem 4rem;
+}
+
+#footer p, 
+#footer i, 
+#footer a {
+  color: white;
+  opacity: .6;
+  transition: 1s;
+}
+
+#footer a:hover {
+  opacity: 1;
+  font-weight: 600;
+}
+
+#footer .row {
+  display: flex;
+  justify-content: space-around;
+  margin-inline: auto;
+}
+
+#footer .row:last-child {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.514);
+}
+
+#footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+#footer .partnerships {
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+#footer img {
+  overflow: clip;
+  object-fit: cover;
+}
+
+#footer img.lmse {
+  width: 30ch;
+}
+
+#footer img.usp {
+  max-width: 15ch;
+}
+
+#footer img.abstartups {
+  max-width: 30ch;
+}
+
+@media (max-width: 768px) {
+
+  #footer>.row,
+  #footer .partnerships {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  #footer i {
+    display: none;
+  }
+
+  #footer .container {
+    width: 100%;
+  }
+}

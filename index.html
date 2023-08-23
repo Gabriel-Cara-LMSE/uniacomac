@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uniacomac</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="shortcut icon" href="/src/img/logos/logo_uniacomac.png" type="image/icon">
 
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -17,22 +18,20 @@
 <body>
     <header id="header">
         <div>
-            <img src="/src/img/logo_uniacomac.png" alt="">
-            <img src="/src/img/logo-leandro_02.png" alt="">
+            <img src="/src/img/logos/logo_uniacomac.png" alt="">
+            <img src="/src/img/logos/logo-LMSE.png" alt="">
         </div>
         <button class="hamburger"></button>
         <nav class="nav">
             <ul class="nav-list">
-                <li><a href="">Apresentação</a></li>
-                <li><a href="">Informações do curso</a></li>
-                <li><a href="">Investimento</a></li>
-                <li><a href="">Cursos Oferecidos</a></li>
-                <li><a href="">Institucional</a></li>
+                <li><a href="#video">Apresentação</a></li>
+                <li><a href="#about-courses">Informações do curso</a></li>
+                <li><a href="#course">Cursos Oferecidos</a></li>
+                <li><a href="#investiment">Investimento</a></li>
+                <li><a href="#about-us">Institucional</a></li>
             </ul>
         </nav>
     </header>
-
-
 
     <main>
 
@@ -90,7 +89,7 @@
 
         <section id="courses">
             <!-- Sobre o Curso -->
-            <div class="container">
+            <div id="about-courses" class="container">
                 <div class="row">
                     <aside class="courses-list">
                         <h3>Sobre o Curso</h3>
@@ -173,7 +172,7 @@
 
 
                 <!-- Cursos Livres -->
-                <div class="container">
+                <div id="course" class="container">
                     <div class="header">
                         <header>
                             <h1>NOSSOS CURSOS</h1>
@@ -334,7 +333,7 @@
                     </div>
                     <div class="row n-revert">
                         <aside>
-                            <img src="/src/img/team/img7.png" alt="">
+                            <img src="/src/img/team/img6.png" alt="">
                         </aside>
                         <aside class="courses-list">
                             <h3>Internacionais</h3>
@@ -503,6 +502,11 @@
         </section>
 
         <section id="exam">
+            <div class="hero-img-fluid">
+                <h1>Vestibular</h1>
+                <p>Para se inscrever no vesibular, cliquei no botão abaixo:</p>
+                <button>Inscreva-se</button>
+            </div>
             <div class="hero-img">
                 <svg class="circulo" width="150" height="150">
                     <circle cx="75" cy="75" r="70" fill="#006DE8"></circle>
@@ -531,36 +535,104 @@
             <h1>Contato</h1>
             <div class="social-media">
                 <a href="mailto:uniacomac@lmse.com.br">
-                    <div class="email">
-                        <i class="ph ph-envelope-simple icon"></i>
-                        <h3>Email</h3>
-                        <p>uniacomac@lmse.com.br</p>
-                    </div>
+                    <i class="ph ph-envelope-simple icon"></i>
+                    <h3>Email</h3>
+                    <p>uniacomac@lmse.com.br</p>
                 </a>
 
                 <a href="tel:1129239699">
-                    <div class="phone">
-                        <i class="ph-fill ph-phone icon"></i>
-                        <h3>Fale Conosco</h3>
-                        <p>&#40;11&#41; 2923-9699</p>
-                        <p>&#40;11&#41; 2923-8695</p>
-                    </div>
+                    <i class="ph-fill ph-phone icon"></i>
+                    <h3>Fale Conosco</h3>
+                    <p>&#40;11&#41; 2923-9699</p>
+                    <p>&#40;11&#41; 2923-8695</p>
                 </a>
 
                 <a>
-                    <div class="whatsapp">
-                        <i class="ph ph-whatsapp-logo icon"></i>
-                        <h3>Whatsapp</h3>
-                        <p>+55 &#40;32&#41; 9194-5026</p>
-                    </div>
+                    <i class="ph ph-whatsapp-logo icon"></i>
+                    <h3>Whatsapp</h3>
+                    <p>+55 &#40;32&#41; 9194-5026</p>
                 </a>
+            </div>
+        </section>
+
+        <section id="about-us">
+            <img src="/src/img/team/img9.png" alt="">
+            <div class="about-text">
+                <h1>Sobre a LMSE</h1>
+                <p>
+                    Somos uma edtech, uma startup de educação. Não somos uma faculdade, não somos somente uma empresa de
+                    consultoria em gestão.
+                </p>
+
+                <p>
+                    Somos tudo isto junto e mais: uma empresa de soluções educacionais levando educação para empresas e
+                    gestão para instituições de ensino.
+                </p>
+
+                <p>
+                    Uma empresa moderna, jovem e dinâmica, criada para fechar o GAP entre teoria e prática, para unir o
+                    mundo corporativo e o acadêmico a fim de ajudar as organizações a atingirem seus objetivos
+                    estratégicos.
+                </p>
+
+                <p>
+                    Criada por profissionais formados na Faculdade de Economia e Administração da Universidade de São
+                    Paulo (FEA-USP) em 2005, a então empresa Alternativa Cursos, Consultorias e Treinamentos, passou a
+                    se chamar em 2018, Leandro Morilhas - Soluções Educacionais com o seguinte Propósito Transformador
+                    Massivo:
+                </p>
+
+                <p>
+                    Ser a maior empresa de soluções educacionais corporativas inovadoras do Brasil, capaz de oferecer
+                    serviços de alta qualidade e excelência, nas áreas de: treinamentos, consultorias, assessorias e
+                    desenvolvimento humano, ajudando nossos clientes, as empresas bem como, seus parceiros de negócios a
+                    atingirem a melhor performance rumo aos seus objetivos estratégicos.
+                </p>
+                <p>Nossos valores são:</p>
+                <ul>
+                    <li>Ética e Honestidade</li>
+                    <li>Meritocracia e senso de justiça</li>
+                    <li>Liberdade de opinião e respeito à pluralidade</li>
+                    <li>Empatia &#40;foco nas pessoas&#41;</li>
+                    <li>Profissionalismo</li>
+                </ul>
+                <p>
+                    Nosso slogan é: Leandro Morilhas - Soluções Educacionais. Integrando teoria e prática para o sucesso
+                    do seu negócio!
+                </p>
             </div>
         </section>
     </main>
 
-
-
-
+    <footer id="footer">
+        <div class="row">
+            <div class="container">
+                <img class="lmse" src="/src/img/logos/logo-LMSE-fundo-escuro.png" alt="">
+                <i>Ser a maior empresa de soluções educacionais corporativas inovadoras do Brasil, capaz de oferecer
+                    serviços de alta qualidade e excelência, nas áreas de: treinamentos, consultorias, assessorias e
+                    desenvolvimento humano, ajudando nossos clientes, as empresas bem como, seus parceiros de negócios a
+                    atingirem a melhor performance rumo aos seus objetivos estratégicos.</i>
+            </div>
+            <div class="container partnerships">
+                <div>
+                    <p>Empresa associada à:</p>
+                    <img class="abstartups" src="/src/img/logos/logo-abstartups.png" alt="">
+                </div>
+                <div>
+                    <p>Uma empresa do ecossistema:</p>
+                    <img class="usp" src="/src/img/logos/dna-negativo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="copyright">
+                &copy; Copyright <strong><span>LMSE.</span></strong> All Rights Reserved
+            </p>
+            <p class="credits">
+                Designed and developed by <a href="https://github.com/Gabriel-Cara">Gabriel Cara</a>
+            </p>
+        </div>
+    </footer>
 
     <div id="preloader"></div>
 
