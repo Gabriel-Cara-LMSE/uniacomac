@@ -51,7 +51,9 @@ body {
 }
 
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0)
   }
 
@@ -59,6 +61,7 @@ body {
     transform: translateY(-10px);
   }
 }
+
 /* End Preloader */
 
 /* Header */
@@ -153,7 +156,7 @@ body {
     height: 100vh;
     background: #242426;
     clip-path: circle(100px at 90% -15%);
-    transition: 1s  ease-out;
+    transition: 1s ease-out;
 
     flex-direction: column;
     justify-content: center;
@@ -170,23 +173,23 @@ body {
   #header .nav-list li:nth-child(1) a {
     transition: 0.5 0.2;
   }
-  
+
   #header .nav-list li:nth-child(2) a {
     transition: 0.5 0.4;
   }
-  
+
   #header .nav-list li:nth-child(3) a {
     transition: 0.5 0.6;
   }
-  
+
   #header .nav-list li:nth-child(4) a {
     transition: 0.5 0.8;
   }
-  
+
   #header .nav-list li:nth-child(5) a {
     transition: 0.5 1;
   }
-  
+
   /* Estilos Ativos */
 
   #header .nav.active .nav-list {
@@ -226,8 +229,9 @@ body {
   #header>div img {
     width: 30vw;
   }
+
   #header .nav-list {
-    
+
     width: 50vw;
   }
 }
@@ -285,8 +289,8 @@ body {
   margin-bottom: 1rem;
 }
 
-#exam button {
-  border: none;
+#exam a {
+  text-decoration: none;
   border-radius: 2rem;
 
   font-size: 1rem;
@@ -300,6 +304,7 @@ body {
   margin-top: 1rem;
 
   position: relative;
+  top: 2rem;
   z-index: 2;
 
   cursor: pointer;
@@ -307,7 +312,7 @@ body {
   transition: .4s;
 }
 
-#exam button:hover {
+#exam a:hover {
   background: var(--text-hot-primary);
   color: white;
 }
@@ -377,6 +382,10 @@ body {
   #hero p,
   #exam p {
     font-size: 0.85rem;
+  }
+
+  #exam a {
+    top: 0;
   }
 
   .circulo,
@@ -644,6 +653,7 @@ body {
 
 #students .swiper-slide {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: .5rem;
@@ -656,6 +666,10 @@ body {
   font-weight: 300;
 
   padding: 3rem;
+}
+
+#students .swiper-slide img {
+  font-size: 40px;
 }
 
 #students .swiper-pagination-bullet-active {
@@ -697,9 +711,6 @@ body {
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
-
-/* End Swiper */
-
 /* End Students */
 
 /* Teachers */
@@ -756,6 +767,7 @@ body {
 #teachers .row>aside p {
   margin-inline: 2rem;
   color: var(--text-cold-secondary);
+  font-size: 1.5rem;
 }
 
 /* End  Teachers */
@@ -833,6 +845,56 @@ body {
     right: 8vw;
   }
 }
+/* End Schedule */
+
+/* Investment */
+#investment {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#investment h1 {
+  font-size: 2rem;
+  color: white;
+  background: var(--text-hot-primary);
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+#investment .row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+#investment .row table {
+  border-collapse: collapse;
+}
+
+#investment .row table tr {
+  gap: 0;
+}
+
+#investment .row table tr th,
+#investment .row table tr td {
+  border: 1px solid black;
+}
+
+#investment .row table tr:has(td) {
+  background: var(--text-hot-primary);
+}
+
+#investment .row table tr:has(td):nth-child(odd) {
+  background: var(--text-cold-primary);
+}
+
+#investment .row table tr:has(th) {
+  background: var(--text-cold-secondary);
+}
+/* End Investment */
 
 /* Contact */
 #contact {
@@ -957,8 +1019,8 @@ body {
 
   #about-us .about-text ul {
     align-items: flex-start;
-  } 
-  
+  }
+
   #about-us .about-text ul li {
     text-align: start;
   }
@@ -976,8 +1038,8 @@ body {
   padding: 2rem 4rem;
 }
 
-#footer p, 
-#footer i, 
+#footer p,
+#footer i,
 #footer a {
   color: white;
   opacity: .6;
@@ -1040,7 +1102,7 @@ body {
     text-align: center;
     gap: 2rem;
   }
-  
+
   #footer i {
     display: none;
   }
