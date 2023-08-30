@@ -231,7 +231,7 @@ body {
   }
 
   #header .nav-list {
-
+    gap: 3rem;
     width: 50vw;
   }
 }
@@ -852,6 +852,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  margin-inline: 1rem;
 }
 
 #investment h1 {
@@ -870,8 +871,15 @@ body {
   margin: 0 auto;
 }
 
+#investment .row p {
+  color: var(--text-cold-secondary);
+  text-align: center;
+}
+
 #investment .row table {
   border-collapse: collapse;
+  width: 40vw;
+  margin: 0 auto;
 }
 
 #investment .row table tr {
@@ -893,6 +901,13 @@ body {
 
 #investment .row table tr:has(th) {
   background: var(--text-cold-secondary);
+  color: #cecece;
+}
+
+@media (max-width: 768px) {
+  #investment .row table {
+    width: 80vw;
+  }
 }
 /* End Investment */
 
