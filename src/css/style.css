@@ -238,9 +238,8 @@ body {
 
 /* End Header */
 
-/* Hero and Exam */
-#hero,
-#exam {
+/* Hero */
+#hero {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -252,8 +251,7 @@ body {
   min-height: fit-content;
 }
 
-#hero .hero-img,
-#exam .hero-img {
+#hero .hero-img {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -268,57 +266,13 @@ body {
   padding: 4rem;
 }
 
-#exam .hero-img-fluid {
-  display: none;
-}
-
-#exam .hero-img {
-  padding: 6.6rem;
-  width: 40vw;
-}
 
 #hero h1 {
   font-size: 3rem;
   letter-spacing: .2rem;
 }
 
-#exam h1 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  border-bottom: 2px solid white;
-  margin-bottom: 1rem;
-}
-
-#exam a {
-  text-decoration: none;
-  border-radius: 2rem;
-
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-
-  background: white;
-  color: var(--text-hot-primary);
-
-  padding: 1rem 2.5rem;
-  margin-top: 1rem;
-
-  position: relative;
-  top: 2rem;
-  z-index: 2;
-
-  cursor: pointer;
-
-  transition: .4s;
-}
-
-#exam a:hover {
-  background: var(--text-hot-primary);
-  color: white;
-}
-
-#hero p,
-#exam p {
+#hero p{
   font-weight: 300;
   line-height: 1.5rem;
 }
@@ -395,7 +349,7 @@ body {
   }
 }
 
-/* End Hero and Exam */
+/* End Hero */
 
 /* Video */
 #video {
@@ -890,18 +844,28 @@ body {
 #investment .row table tr td {
   border: 1px solid black;
 }
-
+/* 
 #investment .row table tr:has(td) {
+  color: #f5f5f5;
   background: var(--text-hot-primary);
 }
 
 #investment .row table tr:has(td):nth-child(odd) {
+  color: #f5f5f5;
   background: var(--text-cold-primary);
-}
+} */
 
 #investment .row table tr:has(th) {
-  background: var(--text-cold-secondary);
-  color: #cecece;
+  background: var(--text-hot-primary);
+  color: #202024;
+}
+
+#investment .row table tr:has(th):hover{
+  background: var(--text-hot-primary);
+}
+
+#investment .row table tr:hover{
+  background: #ffad5c;
 }
 
 @media (max-width: 768px) {
@@ -910,6 +874,34 @@ body {
   }
 }
 /* End Investment */
+
+
+/* Exam */
+#exam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  margin: 4rem 2rem;
+}
+
+#exam>h1 {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background: var(--text-hot-primary);
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#exam p {
+  font-size: 1.1rem;
+  color: var(--text-cold-secondary);
+}
+/* End Exam */
+
 
 /* Contact */
 #contact {
