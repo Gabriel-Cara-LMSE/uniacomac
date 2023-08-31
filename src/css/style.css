@@ -883,7 +883,7 @@ body {
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  margin: 4rem 2rem;
+  margin: 8rem 2rem;
 }
 
 #exam>h1 {
@@ -896,9 +896,70 @@ body {
   text-transform: uppercase;
 }
 
+#exam ul li {
+  color: white;
+}
+
 #exam p {
   font-size: 1.1rem;
   color: var(--text-cold-secondary);
+}
+
+#exam .card {
+  display: flex;
+  background:var(--text-cold-secondary);
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+
+#exam .free,
+#exam .others {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--text-cold-primary);
+  padding: 2rem;
+  width: 15vw;
+  height: 20vh;
+  border-radius: 1rem;
+  gap: .7rem;
+}
+
+#exam .card h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+#exam .card .others span {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  font-size: .7rem;
+  font-weight: 500;
+  background: var(--text-hot-primary);
+  color: white;
+  text-transform: uppercase;
+  padding: .5rem .7rem;
+  border-radius: 1rem;
+}
+
+#exam .card a {
+  background: white;
+  text-decoration: none;
+  padding: .5rem .6rem;
+  border-radius: .5rem;
+  color: var(--text-hot-primary);
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+#exam .card a:hover {
+  background: var(--text-hot-primary);
+  color: white;
 }
 /* End Exam */
 
